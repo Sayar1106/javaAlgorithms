@@ -36,7 +36,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.com.javaAlgorithms.InsertionSort">
+  <component name="RunManager" selected="Application.com.javaAlgorithms.ShellSort">
     <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -60,6 +60,11 @@
       <module name="javaAlgorithms" />
       <method v="2" />
     </configuration>
+    <configuration name="com.javaAlgorithms.ShellSort" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.javaAlgorithms.ShellSort" />
+      <module name="javaAlgorithms" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -70,6 +75,7 @@
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.com.javaAlgorithms.InsertionSort" />
+      <item itemvalue="Application.com.javaAlgorithms.ShellSort" />
     </list>
     <recent_temporary>
       <list>
