@@ -19,6 +19,7 @@ public class InsertionSort {
     public static void main(String[] args){
        String[] arr = {"Banana", "Orange", "Apple", "Grape", "Guava", "Mango"};
        sort(arr);
+
         for(int i = 0; i < arr.length; i++){
             System.out.println(arr[i]);
         }
