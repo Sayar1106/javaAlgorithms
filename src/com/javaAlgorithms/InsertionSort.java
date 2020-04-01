@@ -8,10 +8,8 @@ public class InsertionSort {
            }
        }
     }
-
     private static boolean less(Comparable a, Comparable b)
     {return a.compareTo(b) < 0;}
-
 
     private static void exch(Comparable[] arr, int i, int j)
     {Comparable t = arr[i]; arr[i] = arr[j]; arr[j] = t;}
