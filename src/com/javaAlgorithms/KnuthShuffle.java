@@ -7,7 +7,7 @@ public class KnuthShuffle {
         Random rand = new Random();
 
         for (int i = 0; i < n; i++){
-            int r = rand.nextInt(i);
+            int r = rand.nextInt(i + 1);
             exch(a, i, r);
         }
     }
