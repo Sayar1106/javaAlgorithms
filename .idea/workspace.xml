@@ -23,6 +23,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -36,7 +37,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.com.javaAlgorithms.MergeSort">
+  <component name="RunManager" selected="Application.com.javaAlgorithms.KnuthShuffle">
     <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -57,6 +58,11 @@
     </configuration>
     <configuration name="com.javaAlgorithms.InsertionSort" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.javaAlgorithms.InsertionSort" />
+      <module name="javaAlgorithms" />
+      <method v="2" />
+    </configuration>
+    <configuration name="com.javaAlgorithms.KnuthShuffle" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.javaAlgorithms.KnuthShuffle" />
       <module name="javaAlgorithms" />
       <method v="2" />
     </configuration>
@@ -82,6 +88,7 @@
       <item itemvalue="Application.com.javaAlgorithms.ShellSort" />
       <item itemvalue="Application.com.javaAlgorithms.MergeSort" />
       <item itemvalue="Application.Main" />
+      <item itemvalue="Application.com.javaAlgorithms.KnuthShuffle" />
     </list>
     <recent_temporary>
       <list>
