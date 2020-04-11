@@ -10,10 +10,21 @@
 
 import edu.princeton.cs.algs4.StdDraw;
 
+import java.util.Comparator;
+
 public class Point implements Comparable<Point> {
 
     private final int x;     // x-coordinate of this point
     private final int y;     // y-coordinate of this point
+
+    private class compareSlope implements Comparator<Point> {
+        public int compare(Point p1, Point p2) {
+            double slope1 = slopeTo(p1);
+            double slope2 = slopeTo(p2);
+
+            return Double.compare(slope1, slope2);
+        }
+    }
 
     /**
      * Initializes a new point.
@@ -59,13 +70,20 @@ public class Point implements Comparable<Point> {
      */
     public double slopeTo(Point that) {
         /* YOUR CODE HERE */
-        if (this.x == that.x) return +0.0;
-        else if (this.y == that.y) return Double.POSITIVE_INFINITY;
-        else if ((this.x == that.x) && (this.y == that.y)) return Double.NEGATIVE_INFINITY;
-        else {
-            return 1.0 * (this.y - that.y) / (this.x - that.x);
+        double deltaX = that.x - this.x;
+        double deltaY = that.y - this.y;
+        if (deltaX == 0 && deltaY == 0) {
+            return Double.NEGATIVE_INFINITY;
         }
+        if (deltaX == 0) { // vertical
+            return Double.POSITIVE_INFINITY;
+        }
+        if (deltaY == 0) {
+            return 0;
+        }
+        return deltaY / deltaX;
     }
+   
 
     /**
      * Compares two points by y-coordinate, breaking ties by x-coordinate.
@@ -81,6 +99,7 @@ public class Point implements Comparable<Point> {
      */
     public int compareTo(Point that) {
         /* YOUR CODE HERE */
+        if (that == null) throw new NullPointerException("Null argument.");
         if ((this.y < that.y) || (this.y == that.y && this.x < that.x)) {
             return -1;
         }
@@ -96,9 +115,10 @@ public class Point implements Comparable<Point> {
      *
      * @return the Comparator that defines this ordering on points
      */
-    //public Comparator<Point> slopeOrder() {
-    /* YOUR CODE HERE */
-    //}
+    public Comparator<Point> slopeOrder() {
+        return new compareSlope();
+
+    }
 
 
     /**
